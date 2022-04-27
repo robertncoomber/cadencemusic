@@ -198,12 +198,19 @@ footer a {
   }
 
   .itemList{
+    position: relative;
+    margin: auto;
+    text-align: center;
     top: 0px;
-    position: absolute;
   }
 
   .profiles{
     top: 120px
+  }
+
+  .row{
+    bottom: none;
+    top: 300px;
   }
 
   .wrapper {
