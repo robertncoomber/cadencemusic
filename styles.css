@@ -1,0 +1,206 @@
+/* Create three equal columns that floats next to each other */
+.column {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  bottom: 10px;
+  content: "";
+  display: table;
+}
+
+.itemList{
+  position: absolute;
+  top: 45%;
+}
+
+.profiles{
+  position: absolute;
+  bottom: 0px;
+}
+
+
+html, body, div, 
+h1, h2, h3, h4, h5, h6, p,
+b, u, i, center,dl, dt, dd, ol, ul, li,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  font-family:  BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  color: #000;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -.3px;
+}
+
+.name{
+  position: relative;
+  font-weight: 600;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  width: 250px;
+  padding-inline: 20px;
+  text-align: left;
+}
+
+.cadenceTitle{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.title {
+  padding: 0;
+  color: rgb(124, 124, 124);
+  font-weight: 700;
+  font-size: 14px;
+  width: 250px;
+  padding-inline: 20px;
+  text-align: left;
+}
+
+.description{
+  width: 300px;
+  text-transform: none;
+  text-align: left;
+  
+  padding-inline: 20px;
+  padding-bottom: 8px;
+  line-height: 14px;
+  color: rgb(139, 139, 139);
+}
+
+.headshot{
+  width: 70px;
+  height: auto;
+  border-radius: 30%;
+  filter: grayscale(100%);
+  float:left;
+  margin-inline: 20px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 5% auto 5%;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+p {
+  margin: 0px 0;
+  position: relative;
+}
+
+button.link-btn{
+  background-color: rgb(29, 29, 29);
+  border: none;
+  text-align: left;
+  border-radius: 5px;
+  padding: 7px 7px;
+  line-height: 10px;
+  position: absolute;
+  left: 0;
+  left: 105px;
+}
+
+
+button.link-btn:hover{
+  background-color: rgb(71, 71, 71);
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+}
+
+footer {
+  font-size: 12px;
+  padding: 5% 0 5%;
+}
+
+footer a {
+  margin: 0 10px;
+  color: rgb(110, 110, 115);
+}
+
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+	line-height: 1em;
+  padding-bottom: 200px;
+}
+
+/* Even if you are not ready for the day, it cannot always be night */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(0, 0, 0);
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    clear: both;
+    float: right;
+    width: 100%;
+  }
+
+  .itemList{
+    top: 0px;
+  }
+
+  .profiles{
+    top: 120px
+  }
+
+}
