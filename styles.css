@@ -176,6 +176,16 @@ footer a {
   padding-bottom: 200px;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(0, 0, 0);
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
   .column {
