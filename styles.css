@@ -206,4 +206,10 @@ footer a {
     top: 120px
   }
 
+  .wrapper {
+    display: grid;
+    place-items: left;
+    min-height: 50vh;
+  }
+
 }
