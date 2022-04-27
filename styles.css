@@ -198,6 +198,7 @@ footer a {
   .itemList{
     top: 0px;
     position: fixed;
+    left: 5px;
   }
 
   .profiles{
